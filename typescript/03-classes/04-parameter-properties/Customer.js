@@ -1,5 +1,5 @@
 "use strict";
-class MyCustomer {
+class Customer {
     // parameter properties
     constructor(_firstName, _lastName) {
         this._firstName = _firstName;
@@ -20,7 +20,7 @@ class MyCustomer {
     }
 }
 // new Customer instance
-let myCustomer02 = new MyCustomer("Robin", "Smith");
+let myCustomer02 = new Customer("Robin", "Smith");
 myCustomer02.firstName = "Rohit";
 myCustomer02.lastName = "Sharma";
 console.log(`${myCustomer02.firstName} ${myCustomer02.lastName}`);
