@@ -1,6 +1,8 @@
-class Customer {
+class MyCustomer {
 
     // by default properties are public in typescript
+    // define private properties
+    // by conventions, use _ as prefix for private data members
     private _firstName: string;
     private _lastName: string;
 
@@ -27,10 +29,9 @@ class Customer {
     }
 }
 
-
 // new Customer instance
-let myCustomer = new Customer("Robin", "Smith");
-myCustomer.firstName = "Lily";
-myCustomer.lastName = "Rose";
+let myCustomer02 = new MyCustomer("Robin", "Smith");
+myCustomer02.firstName = "Rohit";
+myCustomer02.lastName = "Sharma";
 
-console.log(`${myCustomer.firstName} ${myCustomer.lastName}`);
+console.log(`${myCustomer02.firstName} ${myCustomer02.lastName}`);

@@ -1,4 +1,4 @@
-class Customer {
+class MyCustomer {
     constructor(firstName, lastName) {
         this._firstName = firstName;
         this._lastName = lastName;
@@ -18,7 +18,7 @@ class Customer {
     }
 }
 // new Customer instance
-let myCustomer = new Customer("Robin", "Smith");
-myCustomer.firstName = "Lily";
-myCustomer.lastName = "Rose";
-console.log(`${myCustomer.firstName} ${myCustomer.lastName}`);
+let myCustomer02 = new MyCustomer("Robin", "Smith");
+myCustomer02.firstName = "Rohit";
+myCustomer02.lastName = "Sharma";
+console.log(`${myCustomer02.firstName} ${myCustomer02.lastName}`);
