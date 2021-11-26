@@ -1,4 +1,6 @@
 class Customer {
+
+    // by default properties are public in typescript
     firstName: string;
     lastName: string;
 
