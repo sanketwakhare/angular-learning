@@ -1,6 +1,6 @@
 <hr />
 
-<table class="table table-striped table-bordered table-hover">
+<table class="table table-bordered table-hover">
   <thead class="table-dark">
     <tr>
       <th>First Name</th>
@@ -11,7 +11,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let tempSalesPerson of salesPersons">
+    <tr
+      *ngFor="let tempSalesPerson of salesPersons"
+      [ngClass]="{ green: tempSalesPerson.salesVolume >= 40000 }"
+    >
       <td>{{ tempSalesPerson.firstName }}</td>
       <td>{{ tempSalesPerson.lastName }}</td>
       <td>{{ tempSalesPerson.email }}</td>
