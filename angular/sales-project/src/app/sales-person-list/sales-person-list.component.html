@@ -7,6 +7,7 @@
       <th>Last Name</th>
       <th>Email</th>
       <th>Sales Volume</th>
+      <th>Met Quota?</th>
     </tr>
   </thead>
   <tbody>
@@ -14,7 +15,15 @@
       <td>{{ tempSalesPerson.firstName }}</td>
       <td>{{ tempSalesPerson.lastName }}</td>
       <td>{{ tempSalesPerson.email }}</td>
-      <td>{{ tempSalesPerson.salesVolume }}</td>
+      <td>{{ tempSalesPerson.salesVolume | currency: "INR" }}</td>
+      <td>
+        <div
+          *ngIf="tempSalesPerson.salesVolume >= 40000; else displayNoContainers"
+        >
+          Yes
+        </div>
+        <ng-template #displayNoContainers>No</ng-template>
+      </td>
     </tr>
   </tbody>
 </table>
