@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
+## Commands used:
+Run `ng new sales-project` to create new angular project
+
+Run `ng generate component sales-person-list` to create new angular component
+
+Run `ng generate class sales-person-list/SalesPerson` to create new class
+
+## After running this app, you will see this screen:
 ![alt text](https://github.com/sanketwakhare/angular-learning/blob/master/angular/sales-project/src/assets/images/output.jpg)
 
 ## Development server
